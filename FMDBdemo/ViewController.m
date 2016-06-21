@@ -79,6 +79,10 @@
         NSString *name = [resultes objectForColumnName:@"name"];
         NSString *phone = [resultes objectForColumnName:@"phone"];
         NSLog(@"query object: id=%@, name=%@, hone=%@",identify, name, phone);
+        
+        NSDictionary *dict = [resultes resultDictionary];
+        NSLog(@"查询结果字典:%@",dict);
+        
     }
 }
 - (IBAction)queueAction:(UIButton *)sender {
